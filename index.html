@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Birthday Adventure 🍯</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div id="balloons"></div>
+<div id="fireflies"></div>
+
+<section id="home" class="page">
+
+    <div class="storybook">
+
+        <h1>
+            🍯 Happy 19th Birthday 🍯
+        </h1>
+
+        <h2>
+            Seb!
+        </h2>
+
+        <p>
+            Every little adventure begins with one page.
+            Today, this story is all about you.
+        </p>
+
+        <button id="startBtn">
+            Open the Storybook
+        </button>
+
+    </div>
+
+</section>
+
+<section id="honeypots" class="page hidden">
+
+    <h2>
+        Pooh left you some honey pots...
+    </h2>
+
+    <p>
+        Tap each one and scroll down 🍯
+    </p>
+
+    <div class="potContainer">
+
+        <div class="pot" data-id="1">
+            🍯
+        </div>
+
+        <div class="pot" data-id="2">
+            🍯
+        </div>
+
+        <div class="pot" data-id="3">
+            🍯
+        </div>
+
+        <div class="pot" data-id="4">
+            🍯
+        </div>
+
+    </div>
+
+    <div id="potMessage"></div>
+
+    <button id="continueLetters">
+        Continue →
+    </button>
+
+</section>
+
+<section id="letters" class="page hidden">
+
+    <h2>
+        Hidden Letters
+    </h2>
+
+    <p>
+        Find all four surprises.
+    </p>
+
+    <div class="letterArea">
+
+        <div class="hiddenItem" data-letter="1">
+            💌
+        </div>
+
+        <div class="hiddenItem" data-letter="2">
+            🌼
+        </div>
+
+        <div class="hiddenItem" data-letter="3">
+            🐝
+        </div>
+
+        <div class="hiddenItem" data-letter="4">
+            🍯
+        </div>
+
+    </div>
+
+    <div id="letterMessage"></div>
+
+    <button id="continuePuzzle">
+        Continue →
+    </button>
+
+</section>
+
+<section id="puzzle" class="page hidden">
+
+    <h2>
+        One Little Question...
+    </h2>
+
+    <p>
+        What is Pooh's favorite food?
+    </p>
+
+    <div class="answers">
+
+        <button class="wrong">
+            Ice Cream 🍦
+        </button>
+
+        <button id="correct">
+            Honey 🍯
+        </button>
+
+        <button class="wrong">
+            Pizza 🍕
+        </button>
+
+    </div>
+
+    <p id="answerMessage"></p>
+
+</section>
+
+<section id="birthdayLetter" class="page hidden">
+
+    <div class="paper">
+
+        <h2>
+            Dear Seb,
+        </h2>
+
+        <p>
+           Happiest 19th birthday bruh! I really really hope na you'll like this kasi ni-cram ko lang sha hehe. anyways so uhm, pano ko ba to sisimulan...hmmm.. 
+</p>
+<p>
+	I really am thankful because I met you during youth camp, tho nagkikita tayo sa church before non. I really really am thankful kay God because you exist (like legit). I hope yk you're one of those friends of mine (more like the only one), someone I can connect with so naturally, whose thoughts, humor, and perspective often feel so surprisingly familiar because some friendships are so easy to explain, or to describe, and then there are the ones that just really make sense.. And its really rare to find peeps who understands things the way you do, tho in diff fonts and contexts. Sometimes talking to you feels like talking to someone who's been on the same wavelength all along, and thats something I've always really appreciated. 
+</p>
+<p>
+	Through every conversation, random thought, prompts, and ideas, you've become one of those people I can always appreciate and relate to. You remind me that it's possible to find pieces of yourself in others while still admiring everything that makes them uniquely who they are. Life is brighter with people like you in it, thank you :)
+</p>
+<p>
+	Hey, tho I know u feel like august hates u this year, because of the typhoons, and all the unexpected changes (ik ure so excited studying sa manila) I pray that it never makes you forget that this month also gave the world you. And yk birthdays or birth month arent really about the perfect weather, or timing, they're about celebrating the person who make it through another year, and that's exactly what today is about. 
+</p>
+<p>
+	Today, on your special day, I pray that you're surrounded by people who love and value you as much as you deserve. May this year bring you better days, kind surprises, and adventures sa manila as you journey sa college life mo. The people around you are blessed to know you, and I'm definitely one of them. If by any chances, you need kasama, help, or whatnots, know that I'm always here to help or kahit samahan ka anywhere u wanna go to do some adventure. 
+</p>
+<p>
+	Happiest birthday ulit Seb!! No rains, cancelled events, or unlucky August streak can ever take how special this day is! Love ya as a friend! :)
+</p>
+<p>
+										xoxo,
+										Hannah 
+        </p>
+
+    </div>
+
+    <button id="wishButton">
+        Make a Wish ⭐
+    </button>
+
+</section>
+
+<section id="wish" class="page hidden">
+
+    <h2>
+        Close your eyes...
+    </h2>
+
+    <p>
+
+        Think of one wish.
+
+        Don't rush.
+
+        I'll wait.
+
+    </p>
+
+    <button id="cakeButton">
+        Let's go for the Cake!
+    </button>
+
+</section>
+
+<section id="cakeSection" class="page hidden">
+
+    <h2>
+        Happy 19th Birthday!
+    </h2>
+
+    <p>
+        Light all 19 candles.
+    </p>
+
+    <div id="cake">
+
+      <div id="candles">
+
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+    <div class="candle"><div class="flame"></div></div>
+
+</div>
+        <div id="cakeBody"></div>
+
+    </div>
+
+    <button id="blowButton">
+        Blow Out the Candles 💨
+    </button>
+<div id="birthdayMessage">
+
+    <h2>
+        🎉 Happy 19th Birthday! 🎉
+    </h2>
+
+    <p>
+        May your 19th year be filled with sweet memories,
+        beautiful adventures, endless laughter,
+        and all the happiness your heart deserves.
+    </p>
+
+    <br>
+
+    <p>
+        Thank you for being one of the people who makes life feel a little less overwhelming.
+        Never forget that your presence makes a difference in more lives than you realize.
+        Happiest 19th birthday Basti, Enjoy ur day today!. 💛
+    </p>
+
+</div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
